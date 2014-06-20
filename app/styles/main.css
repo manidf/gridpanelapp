@@ -1,6 +1,6 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\000034}}
 body {
-  background: #fafafa;
+  background: #eeeeee;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
   /* Move down content because we have a fixed navbar that is 50px tall */
@@ -8,54 +8,62 @@ body {
   padding-bottom: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000313}}
 .body-content {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000317}}
 .body-content .col {
   padding: 0;
   margin: 0;
   line-height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000322}}
+.navbar {
+  background: black;
+  -webkit-box-shadow: #444444 0px 2px 3px;
+  -moz-box-shadow: #444444 0px 2px 3px;
+  box-shadow: #444444 0px 2px 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000326}}
 .innerpanel {
   position: relative;
   top: 0;
   left: 0;
   bottom: 0;
-  background: #ff9900;
+  background: #00aced;
   width: 100%;
   height: 100%;
-  min-height: 200px;
+  min-height: 220px;
+  padding: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000336}}
+.innerpanel h1 {
+  color: white;
+  font-size: 0.9em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000331}}
-.ui-video {
-  width: 100%;
-  height: auto;
-  min-height: 315px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000346}}
 .grid-view-a .row {
   width: 100%;
   margin-right: 0;
   margin-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000351}}
 .grid-view-a .row .row {
   width: 100%;
   margin-right: 0;
   margin-left: 0;
-  margin-top: -20px;
+  margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mannuelferreira\/workspace\/sandbox\/gridpanelapp\/app\/styles\/sass\/main\.sass}line{font-family:\0000357}}
 .grid-view-a .col {
-  padding-right: 1px;
+  padding-right: 0px;
   padding-left: 0;
   margin: 0;
-  margin-top: -19px;
+  margin-top: 1px;
+  border-right: 1px solid white;
 }

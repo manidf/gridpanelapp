@@ -1,7 +1,8 @@
-@import 'compass'
+@import "compass"
+// @import "partials/animate"
 
-body 
-  background: #fafafa
+body
+  background: #eee
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
   color: #333
   /* Move down content because we have a fixed navbar that is 50px tall */
@@ -18,34 +19,44 @@ body
     margin: 0
     line-height: auto
 
+.navbar
+  background: #000
+  +box-shadow(#444 0px 2px 3px)
+
 .innerpanel
   position: relative
   top: 0
   left: 0
   bottom: 0
-  background: #F90
+  background: #00aced
   width: 100%
   height: 100%
-  min-height: 200px
+  min-height: 220px
+  padding: 10px
+  h1
+    color: #FFF
+    font-size: .9em
 
-.ui-video
-  width: 100%
-  height: auto
-  min-height: 315px
+// .ui-video
+//   width: 100%
+//   height: auto
+//   min-height: 315px
 
 .grid-view-a
   .row
     width: 100%
     margin-right: 0
     margin-left: 0
+  
   .row .row
     width: 100%
     margin-right: 0
     margin-left: 0
-    margin-top: -20px 
+    margin-top: 0 
 
   .col 
-    padding-right: 1px
+    padding-right: 0px
     padding-left: 0
     margin: 0
-    margin-top: -19px 
+    margin-top: 1px
+    border-right: 1px solid #FFF
