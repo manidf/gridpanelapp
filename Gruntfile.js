@@ -37,7 +37,7 @@ module.exports = function (grunt) {
                 tasks: ['coffee:test']
             },
             sass: {
-                files: ['<%= yeoman.app %>/styles/sass/*.sass'],
+                files: ['<%= yeoman.app %>/styles/sass/*.sass', '<%= yeoman.app %>/styles/sass/partials/*.sass'],
                 tasks: ['compass:server']
             },
             compass: {
@@ -51,6 +51,7 @@ module.exports = function (grunt) {
                 files: [
                     '<%= yeoman.app %>/*.html',
                     '{<%= yeoman.app %>}/styles/vendor/{,*/}*.css',
+                    '{<%= yeoman.app %>}/styles/sass/partials/*.sass',
                     '{<%= yeoman.app %>}/styles/sass/{,*/}*.sass',
                     '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
@@ -71,7 +72,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        
         responsive_images: {
             dev: {
                 options: {
@@ -135,9 +135,7 @@ module.exports = function (grunt) {
         open: {
             server: {
                 path: 'http://localhost:<%= connect.options.port %>'
-            }
-
-            ,
+            },
             nexus4:{
                 path: 'http://www.browserstack.com/start#os=android&os_version=4.2&device=LG+Nexus+4&speed=1&start=true&url=http://rnikitin.github.io/examples/jumbotron/'
             },
@@ -279,9 +277,7 @@ module.exports = function (grunt) {
                     ]
                 }
             }
-        },
-
-        
+        },        
         modernizr: {
 
             // Path to the build you're using for development.
@@ -298,7 +294,6 @@ module.exports = function (grunt) {
                 "mq" : false,
                 "cssclasses" : true
             },
-
             // Based on default settings on http://modernizr.com/download/
             "extensibility" : {
                 "addtest" : false,
@@ -332,7 +327,6 @@ module.exports = function (grunt) {
             // Have custom Modernizr tests? Add paths to their location here.
             "customTests" : []
         },
-
         useminPrepare: {
             options: {
                 dest: '<%= yeoman.dist %>'

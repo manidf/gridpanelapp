@@ -1684,7 +1684,7 @@ select:focus:invalid:focus {
   vertical-align: middle;
   cursor: pointer;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .btn:focus {
@@ -1721,7 +1721,7 @@ fieldset[disabled] .btn {
 .btn-default {
   color: #ffffff;
   background-color: #a7a9aa;
-  border-color: #a7a9aa;
+  border-color: none;
 }
 
 .btn-default:hover,

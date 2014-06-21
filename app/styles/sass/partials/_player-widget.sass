@@ -1,0 +1,90 @@
+.ui-movie-cover
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  +transition-duration(.2s)
+  +transition-timing-function(ease-in)
+
+// movie covers
+.movie-001
+  background-image: url('../image/cover-the-heat.jpg')
+
+.movie-002
+  background-image: url('../image/cover-think-like-a-man-too.jpg')
+
+.movie-003
+  background-image: url('../image/cover-enter-the-dragon.jpg')
+
+.movie-004
+  background-image: url('../image/cover-superman-returns.jpg')
+
+.movie-005
+  background-image: url('../image/cover-batman-forever-movie.jpg')
+
+.movie-006
+  background-image: url('../image/cover-walter-mitty.jpg')
+
+.movie-007
+  background-image: url('../image/cover-little-miss-sunshine.jpg')
+
+.movie-008
+  background-image: url('../image/cover-ghostbusters.jpg')
+
+.movie-009
+  background-image: url('../image/cover-the-royal-tenenbaums-film.png')
+
+.movie-010
+  background-image: url('../image/cover-life-aquatic-poster.jpg')
+
+.movie-011
+  background-image: url('../image/cover-liar-liar.jpg')
+
+.movie-012
+  background-image: url('../image/cover-Pain-Gain.jpg')
+
+.ui-movie-cover:hover
+  background-size: contain
+  +transition-duration(.2s)
+  +transition-timing-function(ease-in)
+
+.ui-play-controls
+  z-index: 10
+  display: block
+  width: 100%
+  min-height: 32px
+  background: #FFF
+  position: absolute
+  bottom: 0
+  overflow: hidden
+  border-top: none
+  b
+    display: inline-block
+    font-size: 1em
+    color: #444
+    margin: .4em 0 0 .8em
+  
+  ul
+    display: block
+    position: absolute
+    right: 0
+    top: 0
+    float: right
+    margin: 0
+    padding: 0
+    li
+      display: inline-block
+      margin: 0 0 0 -3px
+      padding: 0
+  a
+    display: block
+    float: left
+    padding: .5em .6em .6em .6em
+    margin: 0
+    background: #444
+    border-left: none
+    &:hover
+    text-decoration: none
