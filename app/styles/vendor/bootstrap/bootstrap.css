@@ -1750,8 +1750,8 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #000;
+  border-color: #000;
 }
 
 .btn-primary:hover,
@@ -3417,13 +3417,13 @@ button.close {
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
-  color: #777777;
-  text-align: center;
+  color: #FFF;
+  text-align: center;   
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #FFF;
   text-decoration: none;
   background-color: transparent;
 }
@@ -3517,11 +3517,11 @@ button.close {
 }
 
 .navbar-inverse {
-  background-color: #222222;
+  background-color: #FFF;
 }
 
 .navbar-inverse .navbar-brand {
-  color: #999999;
+  color: #FFF;
 }
 
 .navbar-inverse .navbar-brand:hover,
@@ -3531,11 +3531,11 @@ button.close {
 }
 
 .navbar-inverse .navbar-text {
-  color: #999999;
+  color: #FFF;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #999999;
+  color: #FFF;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,

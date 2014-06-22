@@ -169,7 +169,7 @@ module.exports = function (grunt) {
                     watchTask: false,
                     debugInfo: true,
                     // Change to 0.0.0.0 to access externally
-                    host: 'http://localhost:<%= connect.options.port %>',
+                    host: 'http://0.0.0.0:<%= connect.options.port %>',
                     server: {
                         baseDir: '<%= yeoman.app %>'
                     },

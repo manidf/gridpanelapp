@@ -11,10 +11,10 @@
 
 // movie covers
 .movie-001
-  background-image: url('../image/cover-the-heat.jpg')
+  background-image: url('../image/cover-little-miss-sunshine.jpg')
 
 .movie-002
-  background-image: url('../image/cover-think-like-a-man-too.jpg')
+  background-image: url('../image/cover-life-aquatic-poster.jpg')
 
 .movie-003
   background-image: url('../image/cover-enter-the-dragon.jpg')
@@ -29,7 +29,7 @@
   background-image: url('../image/cover-walter-mitty.jpg')
 
 .movie-007
-  background-image: url('../image/cover-little-miss-sunshine.jpg')
+  background-image: url('../image/cover-the-heat.jpg')
 
 .movie-008
   background-image: url('../image/cover-ghostbusters.jpg')
@@ -38,7 +38,7 @@
   background-image: url('../image/cover-the-royal-tenenbaums-film.png')
 
 .movie-010
-  background-image: url('../image/cover-life-aquatic-poster.jpg')
+  background-image: url('../image/cover-think-like-a-man-too.jpg')
 
 .movie-011
   background-image: url('../image/cover-liar-liar.jpg')
@@ -47,7 +47,8 @@
   background-image: url('../image/cover-Pain-Gain.jpg')
 
 .ui-movie-cover:hover
-  background-size: contain
+  // background-size: 120%
+  background-position: center bottom
   +transition-duration(.2s)
   +transition-timing-function(ease-in)
 
@@ -55,17 +56,18 @@
   z-index: 10
   display: block
   width: 100%
+  height: 32px
   min-height: 32px
-  background: #FFF
+  background: #444
   position: absolute
-  bottom: 0
+  bottom: -1px
   overflow: hidden
   border-top: none
   b
     display: inline-block
-    font-size: 1em
-    color: #444
-    margin: .4em 0 0 .8em
+    font-size: .8em
+    color: #FFF
+    margin: .8em 0 0 .8em
   
   ul
     display: block
@@ -84,7 +86,40 @@
     float: left
     padding: .5em .6em .6em .6em
     margin: 0
-    background: #444
+    background: #00aced
     border-left: none
     &:hover
     text-decoration: none
+
+.ui-ribbon
+  z-index: 11
+  display: block
+  position: absolute
+  top: 25%
+  left: -10%
+  width: 25%
+  padding: 10px
+  background: #444
+  
+  color: white 
+  text-align: right
+  text-transform: uppercase
+
+  +transition-duration(.2s)
+  +transition-timing-function(ease-in)
+
+.ui-ribbon:hover
+  left: -0%
+  +transition-duration(.2s)
+  +transition-timing-function(ease-in)
+
+@media screen and (max-width: 1024px)
+  .ui-ribbon
+    font-size: .7em
+    left: -3%
+
+  .ui-play-controls
+    b
+      display: inline-block
+      font-size: .6em
+      margin: .9em 0 0 .8em
