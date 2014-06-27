@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "name": "MOVIES+",
+  "launch_path": "/app/index.html",
+  "description": "A web app for searching for movies by favourite actor",
+  "icons": {
+    "60": "app/images/touch/touch-icon-60x60.png",
+    "128": "app/images/touch/touch-icon-128x128.png"
+  },
+  "developer": {
+    "name": "WWC",
+    "url": "http://wwc.co.za"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Web Starter Kit",
+      "description": "A web app for searching for movies by favourite actor"
+    }
+  }
+}
