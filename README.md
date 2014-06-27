@@ -5,8 +5,8 @@ Grid panel app: using bootstrap
 
 git clone https://github.com/manidf/gridpanelapp.git
 
-run
+## run
 npm install
 
-run
-gulp serve
+## run
+grunt serve
